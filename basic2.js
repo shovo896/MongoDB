@@ -19,6 +19,8 @@ let res1 = bool + dol ;
 console.log(res1);
 console.log(bool==dol);
 
+// if statement
+
 
 
 
