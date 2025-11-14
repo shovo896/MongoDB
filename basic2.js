@@ -4,5 +4,6 @@
 //console.log(n);
 let bool = true ; 
 let s=String(bool);
+console.log(s)
 
 
