@@ -5,5 +5,8 @@
 let bool = true ; 
 let s=String(bool);
 console.log(s)
+// er por dekhi 
+// automatic type conversion korbo 
+
 
 
