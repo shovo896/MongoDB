@@ -63,4 +63,8 @@ switch(day){
             console.log("Its a regular day");
 }
 
+//tenary operator nije dekhba 
+
+// ajker moto tata 
+
 
