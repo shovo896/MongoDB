@@ -27,6 +27,15 @@ if (age>= 18) {
 }
 
 
+// if...else da dekhai 
+const score = 40 ;
+if (score>= 50){
+       console.log("passed");
+}
+else {
+       console.log("U failed ");
+}
+
 
 
 
