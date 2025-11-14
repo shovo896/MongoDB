@@ -43,11 +43,24 @@ if (temp> 30){
        console.log("its hot ");
 }
 else if (temp >= 20) {
-       |console.log("Its warm ");
+       console.log("Its warm ");
 }
 else {
        console.log("Its cold ");
 }
 
+
+// switch statement 
+const day="monday";
+switch(day){
+       case "Monday": 
+         console.log("start of the week");
+         break ; 
+       case "Friday": 
+            console.log("End of the workweek");
+            break ;
+       default : 
+            console.log("Its a regular day");
+}
 
 
