@@ -37,6 +37,17 @@ else {
 }
 
 
+// amara if...else..if statement ta dekhbo 
+const temp = 26 ; 
+if (temp> 30){
+       console.log("its hot ");
+}
+else if (temp >= 20) {
+       |console.log("Its warm ");
+}
+else {
+       console.log("Its cold ");
+}
 
 
 
