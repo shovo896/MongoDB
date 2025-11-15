@@ -68,3 +68,19 @@ switch(day){
 // ajker moto tata 
 
 
+
+
+// function da kor 
+function greet(name){
+       console.log("Hello,"+name);
+
+}
+greet();
+greet("Aman");
+
+// add 
+function add(a,b){
+       return a+b ;
+}
+dutee=add(10,6);
+console.log(dutee)
