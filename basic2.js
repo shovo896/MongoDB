@@ -121,3 +121,12 @@ function num(n,callback){
 }
 const dounle = (n)=> n*2 ;
 console.log(num(5,dounle))
+
+// constructor function 
+function person(name,age){
+       this.name=name ;
+       this.age = age ;
+
+}
+const user=new person("Neha",22);
+console.log(user.name);
