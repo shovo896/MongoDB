@@ -108,3 +108,8 @@ console.log(add1(2,3));
 // arrow function 
 const square = n=> n*n ;
 console.log(square(4));
+
+// Immediately Invoked Function expression 
+(function(){
+       console.log("chita  runs too fast ");
+}) ();
