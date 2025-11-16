@@ -113,3 +113,11 @@ console.log(square(4));
 (function(){
        console.log("chita  runs too fast ");
 }) ();
+
+//  call back function 
+function num(n,callback){
+       return callback(n);
+
+}
+const dounle = (n)=> n*2 ;
+console.log(num(5,dounle))
