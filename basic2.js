@@ -130,3 +130,5 @@ function person(name,age){
 }
 const user=new person("Neha",22);
 console.log(user.name);
+
+// async theke suru korbo 
