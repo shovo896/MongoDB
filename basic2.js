@@ -106,3 +106,5 @@ const add1 =function(a,b) {
 console.log(add1(2,3));
 
 // arrow function 
+const square = n=> n*n ;
+console.log(square(4))
