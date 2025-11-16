@@ -98,3 +98,11 @@ const greet1=function(){
 
 };
 console.log(greet1());
+
+// function expression 
+const add1 =function(a,b) {
+       return a + b ;
+};
+console.log(add1(2,3));
+
+// arrow function 
