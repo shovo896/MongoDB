@@ -107,4 +107,4 @@ console.log(add1(2,3));
 
 // arrow function 
 const square = n=> n*n ;
-console.log(square(4))
+console.log(square(4));
