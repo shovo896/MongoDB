@@ -91,3 +91,10 @@ function greet() {
        return "Hello" ;
 }
 console.log(greet());
+
+// annoynomous function 
+const greet=function(){
+       return "Hi,there" ;
+
+};
+console.log(greet());
