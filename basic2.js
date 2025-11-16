@@ -93,8 +93,8 @@ function greet() {
 console.log(greet());
 
 // annoynomous function 
-const greet=function(){
+const greet1=function(){
        return "Hi,there" ;
 
 };
-console.log(greet());
+console.log(greet1());
