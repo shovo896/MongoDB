@@ -84,3 +84,10 @@ function add(a,b){
 }
 dutee=add(10,6);
 console.log(dutee)
+
+
+// named function
+function greet() {
+       return "Hello" ;
+}
+console.log(greet());
