@@ -152,3 +152,13 @@ function factorial(n){
        return n*factorial(n-1);
 }
 console.log(factorial(5));
+
+// higher order function 
+function multiplyBy(factor) {
+  return function(num) {
+    return num * factor;
+  };
+}
+
+const double = multiplyBy(2);
+console.log(double(5)); 
