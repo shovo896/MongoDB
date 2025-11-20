@@ -146,3 +146,9 @@ function* numbers1(){
 const gen=numbers1()
 console.log(gen.next().value);
 console.log(gen.next().value);
+
+function factorial(n){
+       if (n==0) return 1 ;
+       return n*factorial(n-1);
+}
+console.log(factorial(5));
