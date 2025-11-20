@@ -145,3 +145,4 @@ function* numbers1(){
 }
 const gen=numbers1()
 console.log(gen.next().value);
+console.log(gen.next().value);
