@@ -132,3 +132,16 @@ const user=new person("Neha",22);
 console.log(user.name);
 
 // async theke suru korbo 
+async function  fetchDeta(){
+       return "Data fetch" ;
+}
+fetchDeta().then(console.log);
+
+// generator function 
+function* numbers1(){
+       yield 1 ;
+       yield 2 ;
+       yield 3 ;
+}
+const gen=numbers1()
+console.log(gen.next().value);
