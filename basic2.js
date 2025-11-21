@@ -171,6 +171,6 @@ const person12 = {
         console.log('Hello, ' + this.name);
     }
 };
-const maysha = person12.greet;
+const maysha = person12.maysha;
 const boundGreet = greet.bind(person);
 boundGreet();
