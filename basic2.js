@@ -162,4 +162,15 @@ function multiplyBy(factor) {
 
 const double = multiplyBy(2);
 console.log(double(5)); 
-// 
+// binding of function 
+
+// bind() method 
+const person12 = {
+    name: 'Shovo',
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+const maysha = person12.greet;
+const boundGreet = greet.bind(person);
+boundGreet();
