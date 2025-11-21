@@ -167,10 +167,10 @@ console.log(double(5));
 // bind() method 
 const person12 = {
     name: 'Shovo',
-    greet: function() {
+    maysha: function() {
         console.log('Hello, ' + this.name);
     }
 };
 const maysha = person12.maysha;
 const boundGreet = maysha.bind(person);
-boundGreet();
+boundmaysha();
