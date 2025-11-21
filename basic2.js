@@ -175,12 +175,13 @@ const maysha = person12.maysha;
 const boundmaysha = maysha.bind(person);
 boundmaysha();
 // call() method 
-const doll= {
-       name:'shapi';
-       baby: function(city){
-              console.log('Hello',+this.name +'from'+city);
-       }
+const dutee12 = {
+    name: 'shapi',
+    baby: function (city) {
+        console.log('Hello ' + this.name + ' from ' + city);
+    }
 };
-person.baby('delhi');
-const baby = person.baby ;
-baby.call(person,'Dhaka')
+
+dutee12.baby('Delhi');          // direct call
+const baby = dutee12.baby;      
+baby.call(dutee12, 'Dhaka');    // using call()
