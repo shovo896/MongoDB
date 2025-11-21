@@ -172,5 +172,5 @@ const person12 = {
     }
 };
 const maysha = person12.maysha;
-const boundGreet = greet.bind(person);
+const boundGreet = maysha.bind(person);
 boundGreet();
