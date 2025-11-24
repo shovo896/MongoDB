@@ -195,3 +195,8 @@ function add(a,b){
        console.log(a+b);
 }
 add(2,3);
+
+const add4=function(a,b){
+       console.log(a+b);
+}
+add4(2,3);
