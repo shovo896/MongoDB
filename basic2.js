@@ -214,3 +214,15 @@ const great=(a,b) => {
               return "b is greater";
 }
 console.log(great(3,5));
+
+let employee = {
+    empname: "Rahul",
+    department: "sales",
+    details: function () {
+        return this.empname +
+            " works with Department " +
+            this.department;
+    }
+};
+console.log(employee.details());
+
