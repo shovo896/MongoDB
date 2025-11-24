@@ -200,3 +200,7 @@ const add4=function(a,b){
        console.log(a+b);
 }
 add4(2,3);
+
+// arrow functions 
+let add5=(a,b)=> a+b ;
+console.log(add5(3,2));
