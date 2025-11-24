@@ -204,3 +204,13 @@ add4(2,3);
 // arrow functions 
 let add5=(a,b)=> a+b ;
 console.log(add5(3,2));
+
+
+// example of an arrow function 
+const great=(a,b) => {
+       if (a>b)
+              return "a is greater";
+       else 
+              return "b is greater";
+}
+console.log(great(3,5));
