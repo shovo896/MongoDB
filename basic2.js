@@ -189,4 +189,9 @@ baby.call(dutee12, 'Dhaka');    // using call()
 
 // the second project 
 
+// writing ffunctions  
 
+function add(a,b){
+       console.log(a+b);
+}
+add(2,3);
