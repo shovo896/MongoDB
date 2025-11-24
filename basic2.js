@@ -185,3 +185,8 @@ const dutee12 = {
 dutee12.baby('Delhi');          // direct call
 const baby = dutee12.baby;      
 baby.call(dutee12, 'Dhaka');    // using call()
+
+
+// the second project 
+
+
