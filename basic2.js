@@ -225,4 +225,6 @@ let employee = {
     }
 };
 console.log(employee.details());
+// be crowd er problem solve korte hobe 
+
 
