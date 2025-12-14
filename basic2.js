@@ -230,3 +230,4 @@ console.log(employee.details());
 console.log(a12);
 var a12=10;
 
+// function
