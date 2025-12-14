@@ -257,7 +257,7 @@ console.log(increment());
 
 
 // closure and IIFE 
-const counter = (function () {
+const counter123 = (function () {
     let count = 0;
 
     return {
@@ -272,6 +272,6 @@ const counter = (function () {
     };
 })();
 
-counter.increment(); 
-counter.increment(); 
-counter.reset();
+counter123.increment(); 
+counter123.increment(); 
+counter123.reset();
