@@ -43,7 +43,7 @@ print("\nFind where age > 23:")
 for doc in collection.find({"age": {"$gt": 23}}):
     print(doc)
 
--
+
 # 7. Projection (show only name and age)
 
 print("\nProjection - only name and age:")
