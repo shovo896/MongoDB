@@ -257,21 +257,21 @@ console.log(increment());
 
 
 // closure and IIFE 
-const counter=(function(){
-       let count=0;
-       return {
-              increment:function(){
-                     count++;
-                     console.log(count);
-              },
-              reset:function(){
-                     count=0;
-                     console.log("count reset");
-              }
-       }
+const counter = (function () {
+    let count = 0;
+
+    return {
+        increment: function () {
+            count++;
+            console.log(count);
+        },
+        reset: function () {
+            count = 0;
+            console.log("Counter reset");
+        },
+    };
 })();
 
-counter.increment();
-counter.increment();
+counter.increment(); 
+counter.increment(); 
 counter.reset();
-counter.increment();
