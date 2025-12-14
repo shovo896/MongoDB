@@ -226,5 +226,7 @@ let employee = {
 };
 console.log(employee.details());
 // be crowd er problem solve korte hobe 
-
+// hosting 
+console.log(a12);
+var a12=10;
 
