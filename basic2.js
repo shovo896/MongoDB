@@ -232,7 +232,7 @@ var a12=10;
 
 // function expression hosting 
 function outer() {
-    let outerVar = "I'm in the outer scope!";
+    let outerVar = "ami duteee shovo er bouuu";
     function inner() {
         console.log(outerVar); 
         outerVar = "Updated"
