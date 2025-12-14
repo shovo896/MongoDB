@@ -286,3 +286,4 @@ function CreateTimers(){
        }
        createTimers();
 }
+// function currying in javascript 
