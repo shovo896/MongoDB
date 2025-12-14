@@ -230,4 +230,15 @@ console.log(employee.details());
 console.log(a12);
 var a12=10;
 
-// function
+// function expression hosting 
+function outer() {
+    let outerVar = "I'm in the outer scope!";
+    function inner() {
+        console.log(outerVar); 
+        outerVar = "Updated"
+    }
+    return inner;  
+}
+const closure = outer(); 
+closure();
+closure();
