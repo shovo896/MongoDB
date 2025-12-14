@@ -275,3 +275,14 @@ const counter123 = (function () {
 counter123.increment(); 
 counter123.increment(); 
 counter123.reset();
+
+
+// closure and set timeout 
+function CreateTimers(){
+       for(let i = 0;i<=3;i++){
+              setTimeout(function(){
+                     console.log(i);
+              },i*1000);
+       }
+       createTimers();
+}
