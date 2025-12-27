@@ -7,7 +7,9 @@ module.exports={
               .then((client) => {
                      dbConnection=client.db()
               })
-              .catch((err) => {})
+              .catch((err) => {
+                     console.log(err)
+              })
        },
        getDb : () => {}
 }
