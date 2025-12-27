@@ -3,6 +3,6 @@ const {MongoClient}=require('mongodb')
 
 
 module.exports={
-       connectToDb:() => {},
+       connectToDb:() => {MongoClient.connect('')},
        getDb : () >= {}
 }
