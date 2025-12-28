@@ -16,17 +16,18 @@ connectToDb((err) => {
 
 
 // routes 
-app.get('/books',(req,res)=> { 
-       let books =[]
-       db.collection('books').find()
-       .sort({author:1})
-       .forEach(book=> books.push(book))
-       .then(()=> {
-              res.status(200).json(books)
-       })  .catch(() => 
-       {
-              res.status(500).json({error:'Could not fetch the  documents'})
-       })      // cursor toArr for each 
-              res.json({mssg:"welcome to the api"})})
+app.get('/books', async (req, res) => { 
+       try {
+              const books = await db
+                     .collection('books')
+                     .find()
+                     .sort({author:1})
+                     .toArray()
+              return res.status(200).json(books)
+       } catch (err) {
+              console.error('Failed to fetch books', err)
+              return res.status(500).json({error:'Could not fetch the documents'})
+       }
+})
 
 
