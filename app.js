@@ -17,8 +17,10 @@ connectToDb((err) => {
 
 // routes 
 app.get('/books',(req,res)=> { 
+       let books =[]
        db.collection('books').find()
-       .sort({author:1})// cursor toArr for each 
+       .sort({author:1})
+       .forEach(book=> books.push(book))// cursor toArr for each 
               res.json({mssg:"welcome to the api"})})
 
 
