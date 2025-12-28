@@ -17,7 +17,8 @@ connectToDb((err) => {
 
 // routes 
 app.get('/books',(req,res)=> { 
-       db.collection('books').find()// cursor toArr for each 
+       db.collection('books').find()
+       .sort({author:1})// cursor toArr for each 
               res.json({mssg:"welcome to the api"})})
 
 
