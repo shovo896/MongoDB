@@ -17,7 +17,7 @@ connectToDb((err) => {
 
 // routes 
 app.get('/books',(req,res)=> { 
-       db.collection('books')
+       db.collection('books').find()
               res.json({mssg:"welcome to the api"})})
 
 
