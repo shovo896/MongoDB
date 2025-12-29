@@ -44,7 +44,7 @@ app.get('/books/:id',(req,res)=>{
                             res.status(500).json({error:'Could not fetch the document'});
                      })
        } else {
-              res.status(400).json({error:'Invalid document id'})
+              res.status(500).json({error:'Invalid document id'})
        }
 })
 
