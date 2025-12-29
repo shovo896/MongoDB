@@ -38,7 +38,9 @@ app.get('/books/:id',(req,res)=>{
               res.status(200).json(doc)
 
         })
-        .catch()
+        .catch(err=>{
+              res.status(500).json({error:'Could not fetch the document'});
+        })
 
 })
 
