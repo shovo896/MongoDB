@@ -32,7 +32,7 @@ app.get('/books', async (req, res) => {
 
 // starts here 
 app.get('/books/:id',(req,res)=>{
-       
+       req.params.id
 })
 
 
