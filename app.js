@@ -1,4 +1,5 @@
 const express=require('express')
+const { ObjectId } = require('mongodb')
 const {connectToDb,getDb}=require('./db')
 // init app 
 const app = express()
@@ -32,16 +33,19 @@ app.get('/books', async (req, res) => {
 
 // starts here 
 app.get('/books/:id',(req,res)=>{
-       db.collection('books')
-        .findOne({_id: ObjectId(req.params.id)})
-        .then(doc => {
-              res.status(200).json(doc)
-
-        })
-        .catch(err=>{
-              res.status(500).json({error:'Could not fetch the document'});
-        })
-
+       if (ObjectId.isValid(req.params.id)){
+              db.collection('books')
+                     .findOne({_id: ObjectId(req.params.id)})
+                     .then(doc => {
+                            res.status(200).json(doc)
+                     })
+                     .catch(err=>{
+                            console.error('Failed to fetch book', err)
+                            res.status(500).json({error:'Could not fetch the document'});
+                     })
+       } else {
+              res.status(400).json({error:'Invalid document id'})
+       }
 })
 
 
