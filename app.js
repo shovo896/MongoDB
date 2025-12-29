@@ -32,7 +32,14 @@ app.get('/books', async (req, res) => {
 
 // starts here 
 app.get('/books/:id',(req,res)=>{
-       req.params.id
+       db.collection('books')
+        .findOne({_id: ObjectId(req.params.id)})
+        .then(doc => {
+              res.status(200).json(doc)
+
+        })
+        .catch()
+
 })
 
 
