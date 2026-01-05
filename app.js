@@ -79,7 +79,7 @@ app.patch('/books/:id',(req,res)=>{
        //{"title":"new title","rating":6}
 
            if (!ObjectId.isValid(id)) {
-              return res.status(400).json({ error: 'Invalid document id' })
+              return res.status(200).json({ error: 'Invalid document id' })
        }
 
        try {
@@ -88,14 +88,15 @@ app.patch('/books/:id',(req,res)=>{
                      .updateOne({ _id: new ObjectId(id) },{$set:updates})
 
               if (result.updatedCount === 0) {
-                     return res.status(500).json({ error: 'Document not found' })
+                     return res.status(200).json({ error: 'Document not found' })
               }
 
-              return res.status(500).send()
+              return res.status(200).send()
        } catch (err) {
               console.error('Failed to delete book', err)
-              return res.status(500).json({ error: 'Could not delete the document' })
+              return res.status(500).json({ error: 'Could not update the document' })
        }
 
 })
+
 
