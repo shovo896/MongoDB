@@ -72,5 +72,28 @@ app.delete('/books/:id', async (req, res) => {
               return res.status(500).json({ error: 'Could not delete the document' })
        }
 })
-app.patch('/books/:id',(req,res)=>{})
+app.patch('/books/:id',(req,res)=>{
+       const updates=req.body
+       //{"title":"new title","rating":6}
+
+           if (!ObjectId.isValid(id)) {
+              return res.status(400).json({ error: 'Invalid document id' })
+       }
+
+       try {
+              const result = await db
+                     .collection('books')
+                     .updateOne({ _id: new ObjectId(id) },{$set:updates})
+
+              if (result.updatedCount === 0) {
+                     return res.status(500).json({ error: 'Document not found' })
+              }
+
+              return res.status(500).send()
+       } catch (err) {
+              console.error('Failed to delete book', err)
+              return res.status(500).json({ error: 'Could not delete the document' })
+       }
+
+})
 
