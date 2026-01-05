@@ -63,10 +63,10 @@ app.delete('/books/:id', async (req, res) => {
                      .deleteOne({ _id: new ObjectId(id) })
 
               if (result.deletedCount === 0) {
-                     return res.status(404).json({ error: 'Document not found' })
+                     return res.status(500).json({ error: 'Document not found' })
               }
 
-              return res.status(204).send()
+              return res.status(500).send()
        } catch (err) {
               console.error('Failed to delete book', err)
               return res.status(500).json({ error: 'Could not delete the document' })
