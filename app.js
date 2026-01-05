@@ -72,6 +72,8 @@ app.delete('/books/:id', async (req, res) => {
               return res.status(500).json({ error: 'Could not delete the document' })
        }
 })
+
+// patch starts here 
 app.patch('/books/:id',(req,res)=>{
        const updates=req.body
        //{"title":"new title","rating":6}
