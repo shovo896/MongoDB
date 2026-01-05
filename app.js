@@ -72,4 +72,5 @@ app.delete('/books/:id', async (req, res) => {
               return res.status(500).json({ error: 'Could not delete the document' })
        }
 })
+app.patch('/books/:id',(req,res)=>{})
 
