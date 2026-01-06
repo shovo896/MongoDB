@@ -351,3 +351,4 @@ for(let i=0;i<b.length;i++){
 console.log(typeof a);
 console.log("Using Array.isArray() method: ", Array.isArray(a));
 // solve array sorting problem in cp course or personally 
+// starts from linkdlist 
