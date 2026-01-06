@@ -333,8 +333,18 @@ console.log(reversedStr);
 let a=[];
 console.log(a);
 
-let b=[10,20,30];
+let b=[10,20,30,45,55,68,49,100];
 console.log(b);
 // last element of an array 
 let lst = b[b.length-1];
 console.log(lst);
+// push method
+b.push(40);
+console.log(b);
+// pop method
+b.pop();
+console.log(b);
+//iterate over an array
+for(let i=0;i<b.length;i++){
+       console.log(b[i]);
+}
