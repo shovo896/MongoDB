@@ -326,3 +326,12 @@ const reversedStr = reverseString(str);
 console.log(reversedStr);
 
 // let use for loop 
+// do ur self 
+
+
+// array 
+let a=[];
+console.log(a);
+
+let b=[10,20,30];
+console.log(b);
