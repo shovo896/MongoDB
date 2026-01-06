@@ -312,6 +312,10 @@ console.log(Number.isInteger(x));
 console.log(x.toLocaleString("bn-BD"));
 
 // string 
-let s="shovo";
-console.log(s[0]);
-console.log(s.length);
+let str="shovo";
+console.log(str[0]);
+console.log(str.length);
+
+// reverse a string 
+let reverseStr=str.split('').reverse().join('');
+console.log(reverseStr);
