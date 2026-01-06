@@ -294,3 +294,12 @@ function add(a){
 }
 console.log(add(2)(3));
 //  class 3 
+// Event loop 
+console,log("Start");
+setTimeout(()=>{
+       console.log("SetTime out callback");
+},0);
+Promise.resolve().then (()=>{
+       console.log("promise Resolved");
+})
+console.log("End");
