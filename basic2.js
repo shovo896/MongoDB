@@ -324,3 +324,5 @@ function reverseString(value) {
 
 const reversedStr = reverseString(str);
 console.log(reversedStr);
+
+// let use for loop 
