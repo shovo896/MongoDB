@@ -278,14 +278,14 @@ counter123.reset();
 
 
 // closure and set timeout 
-function CreateTimers(){
+function createTimers(){
        for(let i = 0;i<=3;i++){
               setTimeout(function(){
                      console.log(i);
               },i*1000);
        }
-       createTimers();
 }
+createTimers();
 // function currying in javascript 
 function add(a){
        return function(b){
@@ -295,7 +295,7 @@ function add(a){
 console.log(add(2)(3));
 //  class 3 
 // Event loop 
-console,log("Start");
+console.log("Start");
 setTimeout(()=>{
        console.log("SetTime out callback");
 },0);
