@@ -317,5 +317,10 @@ console.log(str[0]);
 console.log(str.length);
 
 // reverse a string 
-let reverseStr=str.split('').reverse().join('');
-console.log(reverseStr);
+function reverseString(value) {
+       // coerce to string, support basic Unicode by spreading
+       return [...String(value)].reverse().join('');
+}
+
+const reversedStr = reverseString(str);
+console.log(reversedStr);
