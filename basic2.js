@@ -335,3 +335,6 @@ console.log(a);
 
 let b=[10,20,30];
 console.log(b);
+// last element of an array 
+let lst = b[b.length-1];
+console.log(lst);
