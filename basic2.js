@@ -310,3 +310,8 @@ console.log(x.toExponential());
 console.log(x.toPrecision(4));
 console.log(Number.isInteger(x));
 console.log(x.toLocaleString("bn-BD"));
+
+// string 
+let s="shovo";
+console.log(s[0]);
+console.log(s.length);
