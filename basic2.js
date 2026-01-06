@@ -172,7 +172,7 @@ const person12 = {
     }
 };
 const maysha = person12.maysha;
-const boundmaysha = maysha.bind(person);
+const boundmaysha = maysha.bind(person12);
 boundmaysha();
 // call() method 
 const dutee12 = {
