@@ -1,9 +1,10 @@
 
 const {MongoClient}=require('mongodb')
 let dbConnection
+let uri='mongodb+srv://suvo10info_db_user:<db_password>@cluster0.n2ckpcm.mongodb.net/?appName=Cluster0'
 
 module.exports={
-       connectToDb:(cb) => {MongoClient.connect('mongodb://localhost:27017/bookstore')
+       connectToDb:(cb) => {MongoClient.connect(uri)
               .then((client) => {
                      dbConnection=client.db()
                      return cb()
