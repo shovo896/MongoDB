@@ -23,6 +23,7 @@ connectToDb((err) => {
 // routes 
 app.get('/books', async (req, res) => { 
        const page = req.query.p || 0 
+       const booksPerPage = 3
        try {
               const books = await db
                      .collection('books')
