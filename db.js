@@ -1,7 +1,7 @@
 
 const {MongoClient}=require('mongodb')
 let dbConnection
-let uri='mongodb+srv://suvo10info_db_user:' + process.env.DB_PASSWORD + '@cluster0.n2ckpcm.mongodb.net/?appName=Cluster0'
+let uri='mongodb+srv://suvo10info_db_user:suvo1234@cluster0.n2ckpcm.mongodb.net/?appName=Cluster0'
 
 module.exports={
        connectToDb:(cb) => {MongoClient.connect(uri)
