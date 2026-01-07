@@ -29,6 +29,7 @@ app.get('/books', async (req, res) => {
                      .collection('books')
                      .find()
                      .sort({author:1})
+                     .skip(page * booksPerPage)
                      .toArray()
               return res.status(200).json(books)
        } catch (err) {
