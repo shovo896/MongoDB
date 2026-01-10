@@ -51,7 +51,7 @@ else {
 
 
 // switch statement 
-const day="monday";
+const day="Monday";
 switch(day){
        case "Monday": 
          console.log("start of the week");
@@ -354,31 +354,40 @@ console.log("Using Array.isArray() method: ", Array.isArray(a));
 // starts from linkdlist 
 
 class Node {
-       constructor(data){
-              this.head=null
+       constructor(value){
+              this.value = value;
+              this.next = null;
+       }
+}
+
+class LinkedList {
+       constructor(){
+              this.head = null;
        }
        append(value){
-              let newnode=new Node(value)
+              const newnode = new Node(value);
               if(!this.head){
-                     this.head=newnode
-                     return 
+                     this.head = newnode;
+                     return;
               }
-              let current=this.head
+              let current = this.head;
               while(current.next){
-                     current=current.next
+                     current = current.next;
               }
-              current.next=newnode
+              current.next = newnode;
        }
        printList(){
-              let current=this.head
-              let result=""
+              let current = this.head;
+              let result = "";
               while(current){
-                     result+=current.value+'->'
-                     current=current.next;
+                     result += current.value + "->";
+                     current = current.next;
               }
+              console.log(result + "null");
+       }
 }
-}
-let list=new LinkedList()
-list.append(10)
-list.append(20)
-list.append(30)
+let list = new LinkedList();
+list.append(10);
+list.append(20);
+list.append(30);
+list.printList();
