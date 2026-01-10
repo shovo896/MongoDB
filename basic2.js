@@ -352,3 +352,33 @@ console.log(typeof a);
 console.log("Using Array.isArray() method: ", Array.isArray(a));
 // solve array sorting problem in cp course or personally 
 // starts from linkdlist 
+
+class Node {
+       constructor(data){
+              this.head=null
+       }
+       append(value){
+              let newnode=new Node(value)
+              if(!this.head){
+                     this.head=newnode
+                     return 
+              }
+              let current=this.head
+              while(current.next){
+                     current=current.next
+              }
+              current.next=newnode
+       }
+       printList(){
+              let current=this.head
+              let result=""
+              while(current){
+                     result+=current.value+'->'
+                     current=current.next;
+              }
+}
+}
+let list=new LinkedList()
+list.append(10)
+list.append(20)
+list.append(30)
