@@ -394,15 +394,15 @@ list.printList();
 
 
 
-function person12(name,age){
+function Person12(name,age){
        this.name=name ;
-       this.age = age ;     
+       this.age = age ;
        this.sayHello=function(){
               console.log("Hello,my name is "+ this.name);
        }
 }
 
-
-person12.sayHello();
+const person12Instance = new Person12("Aman", 25);
+person12Instance.sayHello();
 
 //
