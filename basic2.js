@@ -418,5 +418,17 @@ class person13{
 const person13Instance = new person13("Rina", 30);
 person13Instance.g();
 
-// inheritance
-
+// 
+class Car {
+       constructor(make,model,year){
+              this.make=make ;
+              this.model=model ;
+              this.year=year ;
+       
+       }
+       d(){
+              console.log(`Car: ${this.make} ${this.model}, Year: ${this.year}`);
+       }
+}
+let my=new Car("Toyota","Camry",2020);
+my.d();
