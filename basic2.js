@@ -432,3 +432,23 @@ class Car {
 }
 let my=new Car("Toyota","Camry",2020);
 my.d();
+// inheritance
+class Car{
+       constructor(make,model,year){
+              this.make=make;
+              this.model=model ;this.year=year ;
+       }
+       d(){
+              console.log(`Car: ${this.make} ${this.model}, Year: ${this.year}`);
+       }
+}
+class ElectricCar extends Car{
+       constructor(make,model,year,batteryCapacity){
+              super(make,model,year);
+              this.batteryCapacity=batteryCapacity ;
+       }      }
+       d(){
+              console.log(`Electric Car: ${this.make} ${this.model}, Year: ${this.year}, Battery Capacity: ${this.batteryCapacity} kWh`);
+       }
+let myElectricCar=new ElectricCar("Tesla","Model 3",2021,75);
+myElectricCar.d();
