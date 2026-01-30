@@ -444,3 +444,18 @@ class ElectricCar extends Car{
 }
 let myElectricCar=new ElectricCar("Tesla","Model 3",2021,75);
 myElectricCar.d();
+// constructor method 
+class Bar{
+       constructor(make,model,year){
+              this.make=make ;
+              this.model=model ;
+              this.year=year ;
+       
+       }
+       getCarInfo(){
+              return `${this.make} ${this.model}, ${this.year}`;
+       }
+}
+let myCar=new Bar("Honda","Civic",2019);
+console.log(myCar.getCarInfo());
+// static method
