@@ -494,7 +494,22 @@ myAccount.witjhdraw(200);
 console.log(myAccount.getBalance());
 
 // abstraction 
-function a(radius){
+function areaOfCircle(radius){
        return 3.14*radius*radius ;
 }
-console.log((a(5)));
+console.log(areaOfCircle(5));
+
+// closure example 
+function count(){
+       let c1=0;
+       return {
+              inc:function(){
+                     c1++;
+                     console.log(c1);
+              }
+       };
+}
+const counter1=count();
+counter1.inc();
+counter1.inc();
+counter1.inc();counter1.inc();
