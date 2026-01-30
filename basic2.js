@@ -406,3 +406,14 @@ const person12Instance = new Person12("Aman", 25);
 person12Instance.sayHello();
 
 //
+class person13{
+       constructor(name,age){
+              this.name=name ;
+              this.age=age ;
+       }
+       g(){
+              console.log(`Hello ,my name is ${this.name} and I am ${this.age} years old.`);
+       }
+}
+const person13Instance = new person13("Rina", 30);
+person13Instance.g();
