@@ -466,3 +466,35 @@ function prints(name,age){
 }
 const result= new prints("shovo",24);
 console.log(result);
+
+// method data class
+class bankaccount{
+       constructor(accountNumber,accountHolder,balance){
+              this.accountNumber=accountNumber ;
+              this.accountHolder=accountHolder ;
+              this.balance=balance ;
+       }
+       deposit(amount){
+              this.balance+=amount ;
+       }
+       witjhdraw(amount){
+              if(amount>this.balance){
+                     this.balance=amount ;
+              }
+       }
+       getBalance(){
+              return this.balance ;
+       }
+
+}
+const myAccount=new bankaccount("123456","shovo",1000);
+myAccount.deposit(500);
+console.log(myAccount.getBalance());
+myAccount.witjhdraw(200);
+console.log(myAccount.getBalance());
+
+// abstraction 
+function a(radius){
+       return 3.14*radius*radius ;
+}
+console.log((a(5)));
