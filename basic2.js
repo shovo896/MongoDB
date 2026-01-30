@@ -459,3 +459,10 @@ class Bar{
 let myCar=new Bar("Honda","Civic",2019);
 console.log(myCar.getCarInfo());
 // static method
+function prints(name,age){
+       this.name=name ;
+       this.age=age ;
+
+}
+const result= new prints("shovo",24);
+console.log(result);
