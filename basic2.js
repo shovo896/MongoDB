@@ -417,3 +417,6 @@ class person13{
 }
 const person13Instance = new person13("Rina", 30);
 person13Instance.g();
+
+// inheritance
+
